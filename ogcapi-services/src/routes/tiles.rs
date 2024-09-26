@@ -37,7 +37,7 @@ const CONFORMANCE: [&str; 7] = [
     // "http://www.opengis.net/spec/ogcapi-tiles-1/1.0/conf/netcdf",
 ];
 
-const WEB_MERCARTOR_QUAD: &[u8; 8005] = include_bytes!("../../assets/tms/WebMercartorQuad.json");
+const WEB_MERCARTOR_QUAD: &[u8; 8266] = include_bytes!("../../assets/tms/WebMercartorQuad.json");
 
 static TMS: OnceLock<HashMap<String, TileMatrixSet>> = OnceLock::new();
 static TM: OnceLock<HashMap<String, HashMap<String, TileMatrix>>> = OnceLock::new();
